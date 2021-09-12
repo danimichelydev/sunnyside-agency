@@ -1,0 +1,369 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@400;700;900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    transition: 0.3s ease-in;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.header-top .logo{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.header-top .logo img{
+    width: 170px;
+}
+nav {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .ul-mobile ul{
+    display: flex;
+    align-items: center;  
+}
+nav ul li{
+    margin-left: 15px;
+    border-radius: 35px;
+}
+nav ul li:hover{
+    background-color: hsl(201, 100%, 71%);
+}
+nav ul li a{
+    display: block;
+    padding: 15px 30px;
+    color: hsl(0,0%,100%);
+    font-weight: 600;   
+    font-family: 'Barlow', sans-serif;
+}
+nav ul li .contact{
+    background-color: hsl(0,0%,100%);
+    color: hsl(0,0%,0%);
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+nav ul li .contact:hover{
+    background-color: hsl(201, 100%, 71%);
+    color: hsl(0,0%,100%);
+}
+
+/* menu hamburger */
+nav .menu-hamburger-icon {
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+nav .menu-hamburger-icon img{
+    width: 40px;
+}
+nav .menu-hamburger-icon:hover {
+    background-color: hsl(201, 100%, 71%);
+}
+.header-botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+    position: relative;
+    top: 80px;
+}
+.header-botton .header-botton-h1 h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: hsl(0,0%,100%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+/* contents */
+.squares {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.square-line-one, .square-line-two, .square-line-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.square-line-one .square-img{
+    background-image: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.square-line-two .square-img{
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+.information .information-title h2 {
+    font-size: 40px;
+    width: 80%;
+}
+.information .information-p p {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.information .information-a a {
+    color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer; 
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.information .underline-yellow a::after, .information .underline-red  a::after {
+    content: "";
+    width: 150px;
+    display: block;
+    height: 10px;
+    background-color: hsl(58, 86%, 72%);
+    position: absolute;
+    margin-top: -8px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.information .underline-yellow a:hover::after {
+    background-color: hsl(51, 100%, 49%);
+}
+.information .underline-red  a::after {
+    background-color: hsl(6, 62%, 84%);
+}
+
+.information .underline-red a:hover::after {
+    background-color: hsl(7, 99%, 70%);
+}
+
+
+.square-line-three .cherry {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.square-line-three .tangerine {
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.design-photography {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60%;
+}
+.cherry .design-photography h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: hsl(167, 40%, 24%);
+}
+.cherry .design-photography p{
+    color: hsl(167, 40%, 24%);
+}
+.tangerine .design-photography h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: hsl(198, 62%, 26%);
+}
+.tangerine .design-photography p{
+    color: hsl(198, 62%, 26%);
+}
+
+
+/* client */
+.client-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 780px;
+}
+.client-h3 h3 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color:hsl(232, 8%, 61%) ;
+}
+.client-boxe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+}
+.boxes {
+    width: 95%;
+    text-align: center;
+}
+.boxes img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 80px auto;
+}
+.boxes p {
+    line-height: 30px;
+    color:hsl(228, 3%, 37%);
+    height: 130px;
+}
+.boxes h3 {
+    margin-top: 45px;
+    font-weight: 900;
+    color:hsl(210, 2%, 18%);
+}
+.boxes h4 {
+    font-size: 14px;
+    margin-top: 10px;
+    color:hsl(240, 1%, 69%);
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+.photos-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+.photo {
+    width: auto;
+    height: 445px;
+}
+.photo-one {
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photo-two {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photo-three {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photo-four {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: hsl(167, 44%, 70%);
+}
+.footer-wrapper {
+    text-align: center;
+    width: 400px;
+    height: 230px;
+}
+.footer-wrapper h2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: hsl(168, 44%, 32%);
+}
+.footer-links {
+    margin: 40px 0px;
+}
+.footer-links a{
+    margin: 20px;
+    color: hsl(168, 44%, 32%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+}
+.footer-links a:hover{
+    color: hsl(0, 0%, 100%);
+}
+.footer-social-media {
+    margin-top: 70px;
+}
+.footer-social-media i {
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: hsl(168, 44%, 32%);
+}
+.footer-social-media i:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+
+
+.attribution {
+    margin: 20px auto;
+    font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

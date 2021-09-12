@@ -40,7 +40,7 @@ Os usuários devem ser capazes de:
 
 - Mobile-first
 
-- Media Querys
+- Media Query
 
 - Javascript
 
